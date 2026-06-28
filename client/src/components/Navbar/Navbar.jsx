@@ -56,7 +56,7 @@ useEffect(() => {
         <div className="flex items-center gap-4">
   {/* Desktop Button */}
   <button className="hidden lg:block rounded-xl bg-[#111827] px-7 py-3 text-white transition hover:bg-black">
-    Get Started
+   Get Free Audit
   </button>
 
   {/* Mobile Toggle */}
@@ -79,7 +79,7 @@ useEffect(() => {
       </nav>
 
       <button className="mt-6 w-full rounded-xl bg-[#111827] py-3 font-semibold text-white">
-        Get Started
+        Get Free Audit
       </button>
 
     </div>
