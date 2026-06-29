@@ -19,23 +19,16 @@ const Results = () => {
 
           </span>
 
-          <h2 className="mt-6 text-5xl font-black">
+          <h2 className="mt-8 text-5xl font-black">
+            <span className="bg-gradient-to-r from-yellow-500 via-orange-500 to-cyan-500 bg-clip-text text-transparent">  Results That Speak for Themselves</span>
 
-            Results That Speak for Themselves
+          
 
           </h2>
 
         </div>
 
-        {/* <div className="mt-16 flex justify-center">
-
-          <img
-            src="/logo.svg"
-            alt="Client Logo"
-            className="h-10"
-          />
-
-        </div> */}
+    
 
         <div className="mt-16 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
 

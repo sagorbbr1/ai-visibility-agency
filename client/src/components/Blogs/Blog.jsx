@@ -21,17 +21,15 @@ const Blog = () => {
             Latest Insights
           </span>
 
-          <h2 className="mt-6 text-4xl font-black text-[#111827] lg:text-5xl">
-            Learn About
+          <h2 className="mt-6 text-3xl font-black text-[#111827] lg:text-4xl">
+          
             <span className="bg-gradient-to-r from-yellow-500 via-orange-500 to-cyan-500 bg-clip-text text-transparent">
-              {" "}AEO, GEO & AI SEO
+              {" "}AEO, GEO, LLMs Optimization & AI SEO
             </span>
           </h2>
 
           <p className="mt-6 text-lg leading-8 text-gray-500">
-            Stay ahead with our latest guides on Answer Engine
-            Optimization, Generative Engine Optimization,
-            and AI-powered search strategies.
+           Be with our latest updates with Answer Engine Optimization, Generative Engine Optimization and LLMs Optimization.
           </p>
         </motion.div>
 

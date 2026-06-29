@@ -5,7 +5,7 @@ import faqData from "./faqData";
 
 const FAQ = () => {
   return (
-    <section className="bg-gradient-to-b from-white to-slate-50 py-28">
+    <section className="bg-gradient-to-b from-white to-slate-50 py-20">
 
       <Container>
 

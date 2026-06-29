@@ -6,7 +6,7 @@ import pricingData from "./pricingData";
 
 const Pricing = () => {
   return (
-    <section className="bg-[#0b1120] py-28">
+    <section id="pricing" className="bg-[#0b1120] py-16">
 
       <Container>
 
@@ -20,12 +20,12 @@ const Pricing = () => {
             Pricing
           </span>
 
-          <h2 className="mt-6 text-5xl font-black text-white">
+          <h2 className="mt-6 text-4xl font-black text-white">
 
-            Simple Pricing.
+            Proven Results.
 
             <span className="text-yellow-400">
-              {" "}Real Results.
+              {" "}Pricing
             </span>
 
           </h2>
@@ -37,7 +37,7 @@ const Pricing = () => {
 
         </motion.div>
 
-       <div className="mt-20 grid items-stretch gap-8 lg:grid-cols-4">
+   <div className="mt-20 grid gap-8 md:grid-cols-2 lg:grid-cols-3 items-stretch">
   {pricingData.map((plan, index) => (
     <PricingCard
       key={plan.id}

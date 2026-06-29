@@ -4,7 +4,7 @@ import HeroRight from "./HeroRight";
 
 const HeroBottom = () => {
   return (
-    <section className="pb-24 bg-[#f8fafc]">
+    <section id="audit" className="pb-2 pt-0 bg-[#f8fafc]">
       <Container>
         <div className="grid lg:grid-cols-2 gap-16 items-start">
 

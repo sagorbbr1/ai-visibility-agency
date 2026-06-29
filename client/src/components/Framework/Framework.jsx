@@ -5,7 +5,7 @@ import Container from "../ui/Container";
 
 const Framework = () => {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-b from-white via-slate-50 to-white py-28">
+    <section className="relative overflow-hidden bg-gradient-to-b from-white via-slate-50 to-white py-16">
 
       {/* Background Blur */}
 
@@ -38,24 +38,22 @@ const Framework = () => {
 
           </span>
 
-          <h2 className="mt-6 text-4xl font-black text-[#111827] lg:text-6xl">
+          <h2 className="mt-8 text-3xl font-black text-[#111827] lg:text-4xl">
 
-            The{" "}
+            Our{" "}
 
             <span className="bg-gradient-to-r from-yellow-500 via-orange-500 to-cyan-500 bg-clip-text text-transparent">
 
-              ANSWER
-
+             AI Visibility
             </span>
 
             {" "}Framework
 
           </h2>
 
-          <p className="mx-auto mt-6 max-w-3xl text-xl leading-9 text-gray-500">
+          <p className="mx-auto mt-6 max-w-3xl text-xl leading-7 text-gray-500">
 
-            Six stages. 90 days. A repeatable system to transform your
-            business into AI's preferred recommendation.
+            A proven six-step framework that transforms your brand into an AI-ready authority in just 90 days.
 
           </p>
 

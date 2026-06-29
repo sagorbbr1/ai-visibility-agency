@@ -1,3 +1,4 @@
+import AiPlatforms from "../Shared/AiPlatforms";
 import FeatureItem from "./FeatureItem";
 
 const HeroLeft = () => {
@@ -10,50 +11,47 @@ const HeroLeft = () => {
 
       </span>
 
-      <h1 className="heading mt-6 text-5xl font-bold leading-tight lg:text-6xl">
+      <h2 className="heading mt-6 text-4xl font-extrabold leading-none lg:text-5xl">
 
-        See How Often AI
-        <br />
+      Is LLMs Sending Customers to Your Business {" "}
+       
+        <span className=" text-cyan-600">
 
-        Recommends You.
-
-        <span className="block text-cyan-600">
-
-          And Who It Picks Instead.
+           - or to Your Competitors?
 
         </span>
 
-      </h1>
+      </h2>
 
-      <p className="mt-6 max-w-xl text-lg leading-8 text-gray-600">
+      <p className="mt-3 max-w-xl text-lg leading-8 text-gray-600">
 
-        80% of buyers ask AI before making a purchase.
-
-        Discover whether ChatGPT, Gemini and Perplexity
-        recommend your business.
-
+     Every day, B2B buyers ask LLMs who to trust before they buy. If your business isn't showing up in those conversations, your competitors probably are. Discover how your brand performs across today's leading AI platforms and uncover the opportunities you're missing.
       </p>
 
-      <div className="mt-10 space-y-4">
+      <div className="mt-8 space-y-4">
 
         <FeatureItem>
-          AI Visibility Score
+          AI Brand Visibility Score - check 0–100 score in all LLMs Engines
         </FeatureItem>
 
         <FeatureItem>
-          Competitor Comparison
+Competitive AI Snapshot - See which brands AI mentions first
+
         </FeatureItem>
 
         <FeatureItem>
-          Revenue Risk Estimate
+         Missed Opportunity Report- Estimate the potential leads and revenue you're losing
         </FeatureItem>
 
         <FeatureItem>
-          Platform Breakdown
+         Platforms AI Analysis- ChatGPT, Gemini, Claude, and Perplexity 
         </FeatureItem>
 
       </div>
 
+     <div className="flex justify-start opacity-50">
+  <AiPlatforms title="Supported AI Platforms" />
+</div>
     </div>
   );
 };

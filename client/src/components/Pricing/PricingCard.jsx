@@ -2,9 +2,6 @@ import { motion } from "framer-motion";
 import { ArrowRight, Check } from "lucide-react";
 
 const PricingCard = ({ plan, index }) => {
-  const isDark = plan.dark === true;
-  const isPurple = plan.dark === "purple";
-
   return (
     <motion.div
       initial={{ opacity: 0, y: 40 }}
@@ -12,132 +9,62 @@ const PricingCard = ({ plan, index }) => {
       viewport={{ once: true }}
       transition={{
         duration: 0.5,
-        delay: index * 0.1,
+        delay: index * 0.15,
       }}
       whileHover={{
-        y: -10,
+        y: -8,
       }}
-      className={`
-        relative
+      className="
         flex
-        flex-col
         h-full
+        flex-col
         rounded-3xl
         border
+        border-slate-700
+        bg-[#111827]
         p-8
-        transition-all
-        duration-500
-
-        ${
-          plan.featured
-            ? "border-yellow-400 bg-white shadow-2xl scale-[1.03]"
-            : ""
-        }
-
-        ${
-          isDark
-            ? "bg-[#0B1020] border-slate-700 text-white"
-            : ""
-        }
-
-        ${
-          isPurple
-            ? "bg-[#241C54] border-indigo-700 text-white"
-            : ""
-        }
-
-        ${
-          !isDark && !isPurple && !plan.featured
-            ? "bg-white border-slate-200 shadow-lg"
-            : ""
-        }
-      `}
+        text-white
+        transition
+      "
     >
-      {/* Featured Badge */}
-
-      {plan.featured && (
-        <div className="absolute -top-4 left-1/2 -translate-x-1/2">
-          <span className="rounded-full bg-yellow-400 px-5 py-2 text-xs font-bold text-black shadow-lg">
-            👑 MOST POPULAR
-          </span>
-        </div>
-      )}
-
-      {/* Badge */}
-
-      <span
-        className={`inline-block w-fit rounded-full border px-3 py-1 text-xs font-semibold uppercase
-
-        ${
-          isDark || isPurple
-            ? "border-slate-600 text-slate-300"
-            : "border-slate-300 text-slate-600"
-        }`}
-      >
-        {plan.badge}
-      </span>
-
       {/* Title */}
 
-      <h3 className="mt-6 text-3xl font-bold">
+      <h3 className="text-3xl font-bold">
         {plan.title}
       </h3>
 
-      <p
-        className={`mt-2
-
-        ${
-          isDark || isPurple
-            ? "text-slate-300"
-            : "text-gray-500"
-        }`}
-      >
-        {plan.subtitle}
-      </p>
-
       {/* Price */}
 
-      <div className="mt-8 flex items-end gap-2">
+      <div className="mt-8">
 
-        <span className="text-4xl font-black">
+        <span className="text-5xl font-black">
           {plan.price}
-        </span>
-
-        <span
-          className={`mb-1
-
-          ${
-            isDark || isPurple
-              ? "text-slate-400"
-              : "text-gray-500"
-          }`}
-        >
-          {plan.period}
         </span>
 
       </div>
 
       {/* Divider */}
 
-      <div className="my-8 h-px bg-slate-200 dark:bg-slate-700" />
+      <div className="my-8 h-px bg-slate-700" />
 
       {/* Features */}
 
       <div className="space-y-5">
 
-        {plan.features.map((feature, i) => (
+        {plan.features.map((feature, index) => (
 
           <div
-            key={i}
+            key={index}
             className="flex items-start gap-3"
           >
-
             <Check
               size={18}
-              className="mt-1 text-green-500"
+              className="mt-1 text-green-400"
             />
 
-            <span>{feature}</span>
+            <span className="text-slate-300">
+              {feature}
+            </span>
 
           </div>
 
@@ -149,49 +76,40 @@ const PricingCard = ({ plan, index }) => {
 
       {plan.note && (
 
-        <div className="mt-8 rounded-xl border border-blue-200 bg-blue-50 p-4 text-sm text-blue-700">
-
+        <div className="mt-8 rounded-xl border border-blue-500/30 bg-blue-500/10 p-4 text-sm text-blue-300">
           {plan.note}
-
         </div>
 
       )}
 
-      {/* Spacer */}
+      {/* Push button bottom */}
 
-      <div className="flex-grow" />
+      <div className="mt-auto pt-8">
 
-      {/* Button */}
+        <button
+          className="
+            flex
+            w-full
+            items-center
+            justify-center
+            gap-2
+            rounded-xl
+            bg-[#ff6a00]
+            py-4
+            font-semibold
+            text-white
+            transition
+            hover:bg-[#e45d00]
+          "
+        >
+          {plan.button}
 
-      <button
-        className={`
-          mt-8
-          flex
-          w-full
-          items-center
-          justify-center
-          gap-2
-          rounded-xl
-          py-4
-          font-semibold
-          transition-all
-          duration-300
+          <ArrowRight size={18} />
 
-          ${
-            plan.featured
-              ? "bg-blue-600 text-white hover:bg-blue-700"
-              : isDark
-              ? "bg-yellow-500 text-black hover:bg-yellow-400"
-              : isPurple
-              ? "bg-indigo-600 text-white hover:bg-indigo-500"
-              : "bg-[#111827] text-white hover:bg-black"
-          }
-        `}
-      >
-        {plan.button}
+        </button>
 
-        <ArrowRight size={18} />
-      </button>
+      </div>
+
     </motion.div>
   );
 };

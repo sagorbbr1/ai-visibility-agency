@@ -28,8 +28,10 @@ const AuditForm = () => {
           placeholder="competitor.com"
         />
 
-        <Button>
-          Show My AI Visibility Score →
+        <Button className="w-full px-10 py-5" onClick={() => {
+          alert("Thank you for submitting the form! We will get back to you shortly.");
+        }}>
+          Measure Your AI Presence  →
         </Button>
 
       </div>

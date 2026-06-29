@@ -39,11 +39,11 @@ const FrameworkCard = ({ item, index }) => {
         {item.letter}
       </motion.div>
 
-      <h3 className="relative z-10 mt-8 text-2xl font-bold text-[#111827]">
+      <h3 className="relative z-10 mt-8 text-2xl text-center font-bold text-[#111827]">
         {item.title}
       </h3>
 
-      <p className="relative z-10 mt-4 leading-8 text-gray-500">
+      <p className="relative z-10 mt-4 text-center leading-8 text-gray-500">
         {item.description}
       </p>
 

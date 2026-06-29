@@ -2,9 +2,8 @@ import { NavLink } from "react-router-dom";
 
 const links = [
   { title: "Methodology", path: "/methodology" },
-  { title: "Resources", path: "/resources" },
+  { title: "Blogs", path: "/blogs" },
   { title: "Pricing", path: "/pricing" },
-  { title: "Book a Call", path: "/book-call" },
 ];
 
 const NavLinks = ({ mobile = false }) => {
