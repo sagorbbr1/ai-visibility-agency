@@ -15,12 +15,9 @@ const HeroTop = () => {
           className="max-w-4xl mx-auto text-center"
         >
 
-          <span className="border px-5 py-2 rounded-full text-xs uppercase tracking-widest">
-
-            AI Visibility Agency. AEO. GEO. LLMs Optimization
-
-
-          </span>
+       <span className="border px-4 py-2 rounded-full text-[10px] sm:text-xs uppercase tracking-wide whitespace-nowrap">
+  AI Visibility Agency. AEO. GEO. LLMs Optimization
+</span>
 
           <h1 className="text-5xl lg:text-6xl font-black mt-8 leading-tight">
 
