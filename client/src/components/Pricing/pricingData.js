@@ -16,7 +16,7 @@ const pricingData = [
 
   {
     id: 2,
-    title: "Growth Blueprint",
+    title: "6-Month Growth Blueprint",
     price: "$6,400",
     button: "Book a Call",
     features: [
@@ -29,7 +29,7 @@ const pricingData = [
 
   {
     id: 3,
-    title: "Growth Accelerator",
+    title: "1-Year Growth Accelerator",
     price: "$10900",
     button: "Book a Call",
     features: [

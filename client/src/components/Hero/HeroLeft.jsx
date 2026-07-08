@@ -3,55 +3,51 @@ import FeatureItem from "./FeatureItem";
 
 const HeroLeft = () => {
   return (
-    <div>
+    <div className="mx-auto max-w-5xl text-center">
 
-      <span className="inline-block rounded-full border border-sky-300 bg-sky-50 px-5 py-2 text-xs font-semibold uppercase tracking-widest text-sky-700">
+    
 
-        FREE • 60 Seconds • No Credit Card
-
-      </span>
-
-      <h2 className="heading mt-6 text-4xl font-extrabold leading-none lg:text-5xl">
-
-      Is LLMs Sending Customers to Your Business {" "}
-       
-        <span className=" text-cyan-600">
-
-           - or to Your Competitors?
-
+      <h2 className="mt-6 text-3xl font-extrabold leading-tight lg:text-5xl">
+        Are LLMs Sending Customers to
+        <br />
+        <span className="text-slate-900">Your Business</span>{" "}
+        <span className="text-cyan-600">
+          — or to Your Competitors?
         </span>
-
       </h2>
 
-      <p className="mt-3 max-w-xl text-lg leading-8 text-gray-600">
-
-     Every day, B2B buyers ask LLMs who to trust before they buy. If your business isn't showing up in those conversations, your competitors probably are. Discover how your brand performs across today's leading AI platforms and uncover the opportunities you're missing.
+      <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-gray-600">
+        Every day, B2B buyers ask LLMs who to trust before they buy.
+        If your business isn't showing up in those conversations,
+        your competitors probably are. Discover how your brand performs
+        across today's leading AI platforms and uncover the opportunities
+        you're missing.
       </p>
 
-      <div className="mt-8 space-y-4">
+      <div className="mx-auto mt-10 max-w-3xl space-y-4 text-left">
 
         <FeatureItem>
-          AI Brand Visibility Score - check 0–100 score in all LLMs Engines
+          AI Visibility Score — Get a 0–100 visibility score across today's leading AI platforms.
         </FeatureItem>
 
         <FeatureItem>
-Competitive AI Snapshot - See which brands AI mentions first
-
+          Competitor AI Snapshot — See which brands AI recommends before yours.
         </FeatureItem>
 
         <FeatureItem>
-         Missed Opportunity Report- Estimate the potential leads and revenue you're losing
+          Missed Opportunity Report — Estimate the leads and revenue you're losing.
         </FeatureItem>
 
         <FeatureItem>
-         Platforms AI Analysis- ChatGPT, Gemini, Claude, and Perplexity 
+          Multi-Platform Analysis — ChatGPT, Gemini, Claude & Perplexity.
         </FeatureItem>
 
       </div>
 
-     <div className="flex justify-start opacity-50">
-  <AiPlatforms title="Supported AI Platforms" />
-</div>
+      <div className="mt-12 flex justify-center">
+        <AiPlatforms title="Supported AI Platforms" />
+      </div>
+
     </div>
   );
 };
