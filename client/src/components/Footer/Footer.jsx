@@ -128,7 +128,7 @@ const Footer = () => {
                 <li key={item}>
 
                   <Link
-                    to="/"
+                    to={`services/${item.toLowerCase().replace(/ /g, "-")}`}
                     className="text-slate-400 transition hover:text-yellow-400"
                   >
                     {item}
