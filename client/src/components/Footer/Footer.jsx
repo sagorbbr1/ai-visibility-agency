@@ -7,14 +7,13 @@ import {
 } from "react-icons/fa";
 
 const services = [
-  "All Services",
   "AEO & GEO",
   "AI Ranking",
-  "SEO",
-  "Content",
-  "Backlinks",
-  "Technical Optimization",
-  "Analytics",
+  "LLM Visibility",
+  "Brand Mentions",
+  "AI Listicles",
+  "Fan Out Queries",
+  "Brand Prompt Research",
 ];
 
 const company = [

@@ -6,6 +6,11 @@ import Home from "../pages/Home";
 import AeoGeo from "../pages/AEOGeo";
 import AIRanking from "../pages/AIRanking";
 import NotFound from "../pages/NotFound";
+import LLMVisibility from "../pages/LLMVisibility";
+import BrandMentions from "../pages/BrandMentions";
+import LinkedInListicles from "../pages/Listicles";
+import FanOutQueries from "../pages/FanOutQueries";
+import BrandPromptResearch from "../pages/BrandPromptResearch";
 
 const router = createBrowserRouter([
   {
@@ -26,6 +31,26 @@ const router = createBrowserRouter([
         path: "services/ai-ranking",
         element: <AIRanking />,
       },
+      {
+        path: "services/llm-visibility",
+        element: <LLMVisibility />,
+      },
+      {
+        path: "services/brand-mentions",
+        element: <BrandMentions />,
+      },
+      {
+        path: "services/ai-listicles",
+        element: <LinkedInListicles />,
+      },
+      {
+        path: "services/fan-out-queries",
+        element: <FanOutQueries />,
+      },
+      {
+        path: "services/brand-prompt-research",
+        element: <BrandPromptResearch />,
+      }
     ],
   },
 ]);
