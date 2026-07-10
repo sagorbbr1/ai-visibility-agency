@@ -14,6 +14,9 @@ const services = [
   "AI Listicles",
   "Fan Out Queries",
   "Brand Prompt Research",
+  "AI Link Building",
+  "Local GBP Ranking",
+  "Geo Audit",
 ];
 
 const company = [

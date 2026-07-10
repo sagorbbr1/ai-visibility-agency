@@ -11,6 +11,9 @@ import BrandMentions from "../pages/BrandMentions";
 import LinkedInListicles from "../pages/Listicles";
 import FanOutQueries from "../pages/FanOutQueries";
 import BrandPromptResearch from "../pages/BrandPromptResearch";
+import AiLinkBuilding from "../pages/AiLinkBuilding";
+import LocalGBPRanking from "../pages/LocalGBPRanking";
+import GeoAudit from "../pages/GeoAudit";
 
 const router = createBrowserRouter([
   {
@@ -50,7 +53,19 @@ const router = createBrowserRouter([
       {
         path: "services/brand-prompt-research",
         element: <BrandPromptResearch />,
-      }
+      },
+      {
+        path: "services/ai-link-building",
+        element: <AiLinkBuilding />,
+      },
+      {
+        path: "services/local-gbp-ranking",
+        element: <LocalGBPRanking />,
+      },
+      {
+        path: "services/geo-audit",
+        element: <GeoAudit />,
+      },
     ],
   },
 ]);
