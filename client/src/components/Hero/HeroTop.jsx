@@ -6,7 +6,7 @@ const HeroTop = () => {
   return (
     <section className="bg-white">
 
-      <div className="max-w-7xl mx-auto px-6 pt-4 pb-16">
+      <div className="max-w-7xl mx-auto px-6 pt-16 pb-16">
 
         <motion.div
           initial={{ opacity: 0, y: 40 }}

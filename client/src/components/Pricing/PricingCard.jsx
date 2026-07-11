@@ -86,7 +86,7 @@ const PricingCard = ({ plan, index }) => {
 
       <div className="mt-auto pt-8">
 
-        <button
+        <button onClick={() => navigation.navigate("/order")}
           className="
             flex
             w-full

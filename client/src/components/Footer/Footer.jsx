@@ -20,17 +20,8 @@ const services = [
 ];
 
 const company = [
-  "About",
-  "Book Discovery Call",
-  "AI Visibility Guide",
-  "The ANSWER Framework",
-  "Blog",
-  "Case Studies",
-  "Digital PR",
-  "AEO Teardowns",
-  "Demo",
-  "Why We Win",
-  "Best GEO Agencies",
+  "About Us",
+  "Contact Us",
 ];
 
 const industries = [
@@ -104,12 +95,7 @@ const Footer = () => {
                 <FaTwitter />
               </a>
 
-              <a
-                href="#"
-                className="rounded-full border border-slate-700 p-3 transition hover:bg-white hover:text-black"
-              >
-                <FaGithub />
-              </a>
+          
 
             </div>
 
@@ -158,7 +144,7 @@ const Footer = () => {
 
                 <li key={item}>
 
-                  <Link
+                  <Link onClick={() => navigation.navigate(`/${item.toLowerCase().replace(/ /g, "-")}`)}
                     to="/"
                     className="text-slate-400 transition hover:text-yellow-400"
                   >
@@ -214,7 +200,15 @@ const Footer = () => {
 
           <p className="text-sm text-slate-500">
             © {new Date().getFullYear()} AI Visibility Agency.
-            All rights reserved.
+            All rights reserved. Developed by{" "}
+            <a
+              href="https://www.linkedin.com/in/sagorbbr1"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-dark-400 transition hover:text-white"
+            >
+              Sagor
+            </a>  
           </p>
 
           <div className="flex flex-wrap justify-center gap-6">
@@ -233,12 +227,7 @@ const Footer = () => {
               Terms & Conditions
             </Link>
 
-            <Link
-              to="/cookies"
-              className="text-sm text-slate-500 transition hover:text-white"
-            >
-              Cookie Policy
-            </Link>
+        
 
           </div>
 

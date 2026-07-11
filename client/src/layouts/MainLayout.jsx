@@ -6,7 +6,7 @@ import ScrollToTop from "../components/ScrollToTop/ScrollToTop";
 
 const MainLayout = () => {
   return (
-    <div className="pt-36">
+    <div className="pt-20">
           <ScrollToTop />
       <Navbar />
 

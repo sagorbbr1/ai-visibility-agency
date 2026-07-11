@@ -14,6 +14,10 @@ import BrandPromptResearch from "../pages/BrandPromptResearch";
 import AiLinkBuilding from "../pages/AiLinkBuilding";
 import LocalGBPRanking from "../pages/LocalGBPRanking";
 import GeoAudit from "../pages/GeoAudit";
+import Order from "../pages/Order";
+import Pricing from "../pages/Pricing";
+import About from "../pages/About";
+import Contact from "../pages/Contact";
 
 const router = createBrowserRouter([
   {
@@ -66,6 +70,22 @@ const router = createBrowserRouter([
         path: "services/geo-audit",
         element: <GeoAudit />,
       },
+      {
+    path: "/order",
+    element: <Order />,
+},
+{
+  path: "/pricing",
+  element: <Pricing />,
+},
+  {
+    path: "/about-us",
+    element: <About />,
+  },
+  {
+    path: "/contact-us",
+    element: <Contact />,
+  }
     ],
   },
 ]);
