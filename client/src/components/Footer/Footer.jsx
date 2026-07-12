@@ -220,12 +220,6 @@ const Footer = () => {
               Privacy Policy
             </Link>
 
-            <Link
-              to="/terms"
-              className="text-sm text-slate-500 transition hover:text-white"
-            >
-              Terms & Conditions
-            </Link>
 
         
 

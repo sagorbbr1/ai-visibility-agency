@@ -18,6 +18,7 @@ import Order from "../pages/Order";
 import Pricing from "../pages/Pricing";
 import About from "../pages/About";
 import Contact from "../pages/Contact";
+import Privacy from "../pages/Privacy";
 
 const router = createBrowserRouter([
   {
@@ -85,6 +86,10 @@ const router = createBrowserRouter([
   {
     path: "/contact-us",
     element: <Contact />,
+  },
+  {
+    path: "/privacy-policy",
+    element: <Privacy />,
   }
     ],
   },
