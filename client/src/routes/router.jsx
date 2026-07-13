@@ -19,7 +19,7 @@ import Pricing from "../pages/Pricing";
 import About from "../pages/About";
 import Contact from "../pages/Contact";
 import Privacy from "../pages/Privacy";
-
+import Framework from "../pages/Framework";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -90,6 +90,10 @@ const router = createBrowserRouter([
   {
     path: "/privacy-policy",
     element: <Privacy />,
+  },
+  {
+    path: "/framework",
+    element: <Framework />,
   }
     ],
   },

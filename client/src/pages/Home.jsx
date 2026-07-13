@@ -1,15 +1,15 @@
 import Hero from "../components/Hero/Hero";
-import Framework from "../components/Framework/Framework";
 import Blog from "../components/Blogs/Blog";
 import Pricing from "../components/Pricing/Pricing";
 import Results from "../components/Results/Results";
 import FAQ from "../components/FAQ/FAQ";
+import Frameworks from "../components/Framework/Frameworks";
 
 const Home = () => {
   return (
     <>
       <Hero />
-      <Framework />
+      <Frameworks />
       <Blog />
       <Pricing />
       <Results />
