@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 
@@ -44,10 +45,13 @@ const Blog = () => {
         </div>
 
         <div className="mt-16 flex justify-center">
-          <button className="flex items-center gap-2 rounded-xl border border-slate-300 bg-white px-8 py-4 font-semibold shadow transition hover:bg-[#111827] hover:text-white">
-            View All Blog Posts
-            <ArrowRight size={18} />
-          </button>
+        <Link
+  to="/blogs"
+  className="flex items-center gap-2 rounded-xl border border-slate-300 bg-white px-8 py-4 font-semibold shadow transition hover:bg-[#111827] hover:text-white"
+>
+  View All Blog Posts
+  <ArrowRight size={18} />
+</Link>
         </div>
 
       </Container>

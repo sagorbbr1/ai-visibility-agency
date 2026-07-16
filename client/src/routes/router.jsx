@@ -20,6 +20,7 @@ import About from "../pages/About";
 import Contact from "../pages/Contact";
 import Privacy from "../pages/Privacy";
 import Framework from "../pages/Framework";
+import Blogs from "../pages/Blogs";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -94,7 +95,11 @@ const router = createBrowserRouter([
   {
     path: "/framework",
     element: <Framework />,
-  }
+  },
+      {
+        path: "/blogs",
+        element: <Blogs />,
+      },
     ],
   },
 ]);
