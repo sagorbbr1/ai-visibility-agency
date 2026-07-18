@@ -5,6 +5,7 @@ import dotenv from "dotenv";
 import authRoutes from "./routes/auth.routes.js";
 const app = express();
 app.use("/api/auth", authRoutes);
+import orderRoutes from "./routes/orderRoutes.js";
 dotenv.config();
 
 
@@ -32,5 +33,7 @@ app.get("/", (req, res) => {
     message: "AI Visibility Agency API Running 🚀",
   });
 });
+
+app.use("/api/order", orderRoutes);
 
 export default app;

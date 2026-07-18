@@ -37,19 +37,19 @@ const OrderForm = () => {
 
   const [loading, setLoading] = useState(false);
 
-  const [formData, setFormData] = useState({
-    name: "",
-    company: "",
-    email: "",
-    phone: "",
-    website: "",
-    country: "",
-    service,
-    package: packageName,
-    meetingDate: "",
-    meetingTime: "",
-    message: "",
-  });
+const [formData, setFormData] = useState({
+  name: "",
+  company: "",
+  email: "",
+  phone: "",
+  website: "",
+  country: "",
+  service,
+  packageName: packageName,
+  meetingDate: "",
+  meetingTime: "",
+  message: "",
+});
 
   const handleChange = (e) => {
     setFormData((prev) => ({
@@ -64,16 +64,16 @@ const OrderForm = () => {
     setLoading(true);
 
     try {
-      const res = await fetch(
-        `${import.meta.env.VITE_API_URL}/api/send-order`,
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(formData),
-        }
-      );
+    const res = await fetch(
+  `${import.meta.env.VITE_API_URL}/api/order`,
+  {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(formData),
+  }
+);
 
       const data = await res.json();
 
@@ -207,21 +207,21 @@ const OrderForm = () => {
               Service *
             </label>
 
-            <select
-              name="service"
-              value={formData.service}
-              onChange={handleChange}
-              required
-              className="w-full rounded-xl border p-4 outline-none focus:border-cyan-500"
-            >
-              <option value="">Select Service</option>
+       <select
+  name="service"
+  value={formData.service}
+  onChange={handleChange}
+  required
+  className="w-full rounded-xl border p-4 outline-none focus:border-cyan-500"
+>
+  <option value="">Select Service</option>
 
-              {services.map((service) => (
-                <option key={service} value={service}>
-                  {service}
-                </option>
-              ))}
-            </select>
+  {services.map((service) => (
+    <option key={service} value={service}>
+      {service}
+    </option>
+  ))}
+</select>
           </div>
 
           <div>
@@ -229,20 +229,21 @@ const OrderForm = () => {
               Package
             </label>
 
-            <select
-              name="package"
-              value={formData.package}
-              onChange={handleChange}
-              className="w-full rounded-xl border p-4 outline-none focus:border-cyan-500"
-            >
-              <option value="">Select Package</option>
+          <select
+  name="packageName"
+  value={formData.packageName}
+  onChange={handleChange}
+  required
+  className="w-full rounded-xl border p-4 outline-none focus:border-cyan-500"
+>
+  <option value="">Select Package</option>
 
-              {packages.map((pkg) => (
-                <option key={pkg} value={pkg}>
-                  {pkg}
-                </option>
-              ))}
-            </select>
+  {packages.map((pkg) => (
+    <option key={pkg} value={pkg}>
+      {pkg}
+    </option>
+  ))}
+</select>
           </div>
 
           <div>
