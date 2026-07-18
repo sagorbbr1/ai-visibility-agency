@@ -21,6 +21,9 @@ import Contact from "../pages/Contact";
 import Privacy from "../pages/Privacy";
 import Framework from "../pages/Framework";
 import Blogs from "../pages/Blogs";
+import AdminLogin from "../pages/AdminLogin";
+import ProtectedRoute from "./ProtectedRoute";
+import Dashboard from "../pages/Dashboard";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -100,6 +103,18 @@ const router = createBrowserRouter([
         path: "/blogs",
         element: <Blogs />,
       },
+    {
+  path: "/admin/login",
+  element: <AdminLogin />,
+    },
+    {
+      path: "/admin/dashboard",
+      element: (
+        <ProtectedRoute>
+      <Dashboard />
+    </ProtectedRoute> )
+    }
+
     ],
   },
 ]);

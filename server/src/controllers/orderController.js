@@ -2,7 +2,6 @@ import sendMail from "../utils/sendMail.js";
 
 export const createOrder = async (req, res) => {
   try {
-    console.log(req.body);
 
     const {
       name,
@@ -18,7 +17,7 @@ export const createOrder = async (req, res) => {
       message,
     } = req.body;
 
-    console.log(req.body);
+   
 
     if (!name || !email || !service || !packageName) {
       return res.status(400).json({

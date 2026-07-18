@@ -5,6 +5,7 @@ import dotenv from "dotenv";
 
 import authRoutes from "./routes/auth.routes.js";
 import orderRoutes from "./routes/orderRoutes.js";
+import adminRoutes from "./routes/adminRoutes.js";
 
 dotenv.config();
 
@@ -22,6 +23,8 @@ app.use(cookieParser());
 
 app.use("/api/auth", authRoutes);
 app.use("/api/order", orderRoutes);
+app.use("/api/admin", adminRoutes);
+
 const PORT = process.env.PORT || 5000;
 app.get("/", (req, res) => {
   res.json({
