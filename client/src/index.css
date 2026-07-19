@@ -13,3 +13,19 @@ body{
 .heading{
     font-family:'Space Grotesk', sans-serif;
 }
+
+.ql-toolbar {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.ql-container {
+  min-height: 350px;
+  font-size: 16px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.ql-editor {
+  min-height: 350px;
+}

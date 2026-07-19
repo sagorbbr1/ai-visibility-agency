@@ -24,6 +24,11 @@ import Blogs from "../pages/Blogs";
 import AdminLogin from "../pages/AdminLogin";
 import ProtectedRoute from "./ProtectedRoute";
 import Dashboard from "../pages/Dashboard";
+import CreateBlog from "../pages/admin/CreateBlog";
+import EditBlog from "../pages/admin/EditBlog";
+import AdminBlogs from "../pages/admin/Blogs";
+
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -113,7 +118,31 @@ const router = createBrowserRouter([
         <ProtectedRoute>
       <Dashboard />
     </ProtectedRoute> )
-    }
+    },
+    {
+  path: "/admin/blogs",
+  element: (
+    <ProtectedRoute>
+      <AdminBlogs />
+    </ProtectedRoute>
+  ),
+},
+{
+  path: "/admin/create-blog",
+  element: (
+    <ProtectedRoute>
+      <CreateBlog />
+    </ProtectedRoute>
+  ),
+},
+{
+  path: "/admin/edit-blog/:id",
+  element: (
+    <ProtectedRoute>
+      <EditBlog />
+    </ProtectedRoute>
+  ),
+},
 
     ],
   },

@@ -15,77 +15,53 @@ const BlogCard = ({ post, index }) => {
     >
       {/* Image */}
 
-      <div className="relative overflow-hidden">
+   <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl">
 
-        <img
-          src={post.image}
-          alt={post.title}
-          className="h-60 w-full object-cover duration-700 group-hover:scale-110"
-        />
+  <img
+    src={post.coverImage}
+    alt={post.title}
+    className="h-56 w-full object-cover"
+  />
 
-        <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-0 transition duration-500 group-hover:opacity-100" />
+  <div className="p-6">
 
-        <span className="absolute left-5 top-5 rounded-full bg-white px-3 py-1 text-xs font-semibold">
-          {post.category}
-        </span>
+    {/* Category & Date */}
 
-      </div>
+    <div className="mb-4 flex items-center justify-between">
 
-      {/* Content */}
+      <span className="rounded-full bg-cyan-100 px-3 py-1 text-xs font-semibold text-cyan-700">
+        {post.category}
+      </span>
 
-      <div className="p-7">
+      <span className="text-sm text-slate-500">
+        {new Date(post.createdAt).toLocaleDateString()}
+      </span>
 
-        <div className="flex items-center gap-3 text-sm text-gray-400">
+    </div>
 
-          <span>{post.date}</span>
+    {/* Title */}
 
-          <span>•</span>
+    <h3 className="mb-3 line-clamp-2 text-2xl font-bold leading-snug text-slate-900">
+      {post.title}
+    </h3>
 
-          <span>{post.readTime}</span>
+    {/* Excerpt */}
 
-        </div>
+    <p className="mb-6 line-clamp-3 text-base leading-7 text-slate-600">
+      {post.excerpt}
+    </p>
 
-        <h3 className="mt-5 text-2xl font-bold leading-snug text-[#111827] transition group-hover:text-blue-600">
+    {/* Read More */}
 
-          {post.title}
+    <button className="font-semibold text-cyan-600 transition hover:text-cyan-700">
+      Read More →
+    </button>
 
-        </h3>
+  </div>
 
-        <p className="mt-4 leading-8 text-gray-500">
+</div>
 
-          {post.description}
 
-        </p>
-
-        <div className="mt-8 flex items-center justify-between">
-
-          <div>
-
-            <p className="text-sm text-gray-400">
-
-              By
-
-            </p>
-
-            <h5 className="font-semibold">
-
-              {post.author}
-
-            </h5>
-
-          </div>
-
-          <button className="flex items-center gap-2 rounded-full bg-slate-100 px-5 py-3 font-semibold transition group-hover:bg-[#111827] group-hover:text-white">
-
-            Read More
-
-            <ArrowRight size={18} />
-
-          </button>
-
-        </div>
-
-      </div>
 
     </motion.div>
   );
