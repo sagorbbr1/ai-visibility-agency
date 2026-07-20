@@ -29,7 +29,6 @@ const formats = [
   "strike",
 
   "list",
-  "bullet",
 
   "blockquote",
   "code-block",

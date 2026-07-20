@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const BlogCard = ({ post, index }) => {
   return (
@@ -53,9 +53,9 @@ const BlogCard = ({ post, index }) => {
 
     {/* Read More */}
 
-    <button className="font-semibold text-cyan-600 transition hover:text-cyan-700">
+    <Link to={`/blogs/${post.slug}`} className="font-semibold text-cyan-600 transition hover:text-cyan-700">
       Read More →
-    </button>
+    </Link>
 
   </div>
 

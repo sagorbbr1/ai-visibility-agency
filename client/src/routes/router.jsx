@@ -27,6 +27,7 @@ import Dashboard from "../pages/Dashboard";
 import CreateBlog from "../pages/admin/CreateBlog";
 import EditBlog from "../pages/admin/EditBlog";
 import AdminBlogs from "../pages/admin/Blogs";
+import SingleBlog from "../pages/SingleBlog";
 
 
 const router = createBrowserRouter([
@@ -107,6 +108,10 @@ const router = createBrowserRouter([
       {
         path: "/blogs",
         element: <Blogs />,
+      },
+    {
+        path: "/blogs/:slug",
+        element: <SingleBlog />,
       },
     {
   path: "/admin/login",

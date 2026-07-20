@@ -37,7 +37,8 @@ const EditBlog = () => {
 
   const fetchBlog = async () => {
     try {
-      const { data } = await axios.get(`${API}/api/blog/${id}`);
+      const { data } = await axios.get(`${API}/api/blog/id/${id}`);
+      console.log(data)
 
       setFormData({
         title: data.blog.title,
