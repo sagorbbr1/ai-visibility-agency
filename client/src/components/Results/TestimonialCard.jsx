@@ -2,6 +2,7 @@ import { Quote } from "lucide-react";
 import { motion } from "framer-motion";
 
 const TestimonialCard = ({ item, index }) => {
+  
   return (
     <motion.div
       initial={{ opacity: 0, y: 35 }}

@@ -1,11 +1,26 @@
 import Container from "../ui/Container";
 import StatsCard from "./StatsCard";
 import TestimonialCard from "./TestimonialCard";
-
+import { useEffect, useState } from "react";
+import axios from "axios";
 import statsData from "./statsData";
 import testimonialData from "./testimonialData";
 
+const API = import.meta.env.VITE_API_URL;
+
+
 const Results = () => {
+  const [reviews, setReviews] = useState([]);
+
+useEffect(() => {
+  // eslint-disable-next-line react-hooks/immutability
+  fetchReviews();
+}, []);
+
+const fetchReviews = async () => {
+  const { data } = await axios.get(`${API}/api/reviews`);
+  setReviews(data.reviews);
+};
   return (
     <section className="relative overflow-hidden bg-gradient-to-b from-slate-50 via-white to-slate-50 py-28">
 
@@ -44,13 +59,13 @@ const Results = () => {
 
         <div className="mt-16 grid gap-8 lg:grid-cols-2">
 
-          {testimonialData.map((item, index) => (
-            <TestimonialCard
-              key={item.id}
-              item={item}
-              index={index}
-            />
-          ))}
+          {reviews.map((item, index) => (
+  <TestimonialCard
+    key={item._id}
+    item={item}
+    index={index}
+  />
+))}
 
         </div>
 

@@ -10,6 +10,8 @@ import authRoutes from "./routes/auth.routes.js";
 import orderRoutes from "./routes/orderRoutes.js";
 import adminRoutes from "./routes/adminRoutes.js";
 import blogRoutes from "./routes/blogRoutes.js";
+import reviewRoutes from "./routes/reviewRoutes.js";
+
 dotenv.config();
 
 const app = express();
@@ -28,6 +30,7 @@ app.use("/api/auth", authRoutes);
 app.use("/api/order", orderRoutes);
 app.use("/api/admin", adminRoutes);
 app.use("/api/blog", blogRoutes);
+app.use("/api/reviews", reviewRoutes);
 
 const PORT = process.env.PORT || 5000;
 app.get("/", (req, res) => {

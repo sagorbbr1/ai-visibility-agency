@@ -28,6 +28,7 @@ import CreateBlog from "../pages/admin/CreateBlog";
 import EditBlog from "../pages/admin/EditBlog";
 import AdminBlogs from "../pages/admin/Blogs";
 import SingleBlog from "../pages/SingleBlog";
+import AdminReviews from "../pages/admin/AdminReviews";
 
 
 const router = createBrowserRouter([
@@ -148,6 +149,14 @@ const router = createBrowserRouter([
     </ProtectedRoute>
   ),
 },
+{
+  path: "/admin/reviews",
+  element: (
+    <ProtectedRoute>
+      <AdminReviews />
+    </ProtectedRoute>
+  ),
+}
 
     ],
   },
