@@ -14,7 +14,7 @@ import {
 
 import Container from "../components/ui/Container";
 import Button from "../components/ui/Button";
-
+import FanOutImg from "../assets/images/fanout.png";
 const faqs = [
   {
     question: "What is a Fan-Out Query?",
@@ -70,6 +70,10 @@ ChatGPT & Google AI
 
 </h1>
 
+<div className="mt-8 text-lg leading-9 text-slate-600">
+  <img className="mx-auto" src={FanOutImg} alt="Fan-Out Queries" />
+</div>
+
 <p className="mt-8 text-xl leading-9 text-slate-600">
 
 Modern AI doesn't search the way Google used to.
@@ -113,6 +117,8 @@ Changed
 </span>
 
 </h2>
+
+
 
 <div className="mt-10 space-y-8 text-lg leading-9 text-slate-600">
 

@@ -16,7 +16,7 @@ import {
 
 import Container from "../components/ui/Container";
 import Button from "../components/ui/Button";
-
+import LLMVisibilityImg from "../assets/images/llmvis.png";
 const faqs = [
   {
     question: "What is LLM Visibility?",
@@ -101,7 +101,7 @@ LLM VISIBILITY
 
 </span>
 
-<h1 className="mt-8 text-5xl font-black leading-tight lg:text-7xl">
+<h1 className="mt-8 text-4xl font-black leading-tight lg:text-5xl">
 
 Get Your Brand
 
@@ -114,6 +114,10 @@ Recognized Inside
 AI Answers
 
 </h1>
+
+<div className="mt-8 text-lg leading-9 text-slate-600">
+  <img className="mx-auto" src={LLMVisibilityImg} alt="LLM Visibility" />
+</div>
 
 <p className="mt-8 text-xl leading-9 text-slate-600">
 

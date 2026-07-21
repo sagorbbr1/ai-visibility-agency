@@ -14,7 +14,7 @@ import {
 
 import Container from "../components/ui/Container";
 import Button from "../components/ui/Button";
-
+import BrandPromptImg from "../assets/images/Brandprompt.png";
 const faqs = [
   {
     question: "What is Brand Prompt Research?",
@@ -69,6 +69,10 @@ Thinks About Your Brand
 </span>
 
 </h1>
+
+<div className="mt-8 text-lg leading-9 text-slate-600">
+  <img className="mx-auto" src={BrandPromptImg} alt="Brand Prompt Research" />
+</div>
 
 <p className="mt-8 text-xl leading-9 text-slate-600">
 
@@ -694,7 +698,7 @@ Delivered in a practical roadmap that helps improve AI search visibility.
 
       </span>
 
-      <h2 className="mt-8 text-5xl font-black leading-tight lg:text-6xl">
+      <h2 className="mt-8 text-4xl font-black leading-tight lg:text-5xl">
 
         Make Your Brand
 

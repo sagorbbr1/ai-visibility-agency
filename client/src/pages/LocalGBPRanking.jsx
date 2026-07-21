@@ -12,7 +12,7 @@ import {
 
 import Container from "../components/ui/Container";
 import Button from "../components/ui/Button";
-
+import LocalGBP from "../assets/images/localgsb.png";
 const faqs = [
   {
     question: "What is AI-Driven Local GBP Ranking?",
@@ -67,6 +67,10 @@ Local GBP Ranking
 </span>
 
 </h1>
+
+<div className="mt-8 text-lg leading-9 text-slate-600">
+  <img className="mx-auto" src={LocalGBP} alt="AI-Driven Local GBP Ranking" />
+</div>
 
 <p className="mt-8 text-xl leading-9 text-slate-600">
 

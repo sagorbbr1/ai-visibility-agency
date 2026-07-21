@@ -14,6 +14,7 @@ import {
 
 import Container from "../components/ui/Container";
 import Button from "../components/ui/Button";
+import ListiclesImg from "../assets/images/aicitaions.png";
 
 const faqs = [
   {
@@ -67,6 +68,10 @@ For AI Citations
 </span>
 
 </h1>
+
+<div className="mt-8 text-lg leading-9 text-slate-600">
+  <img className="mx-auto" src={ListiclesImg} alt="LinkedIn Listicles for AI Citations" />
+</div>
 
 <p className="mt-8 text-xl leading-9 text-slate-600">
 

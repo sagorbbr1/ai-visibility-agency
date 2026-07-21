@@ -15,7 +15,7 @@ Star
 
 import Container from "../components/ui/Container";
 import Button from "../components/ui/Button";
-
+import BrandMentionsImg from "../assets/images//brandmension.png";
 const BrandMentions=()=>{
 
 const [open,setOpen]=useState(0);
@@ -64,6 +64,10 @@ On Reputable Platforms
 </span>
 
 </h1>
+
+<div className="mt-8 text-lg leading-9 text-slate-600">
+  <img className="mx-auto" src={BrandMentionsImg} alt="Brand Mentions" />
+</div>
 
 <p className="mt-8 text-xl leading-9 text-slate-600">
 

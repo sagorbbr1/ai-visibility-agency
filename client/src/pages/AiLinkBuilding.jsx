@@ -13,7 +13,7 @@ import {
 
 import Container from "../components/ui/Container";
 import Button from "../components/ui/Button";
-
+import AILINKPhoto from "../assets/images/ailinkbuilding.png";
 const faqs = [
   {
     question: "What is AI Link-Building?",
@@ -68,6 +68,10 @@ AI Understands
 </span>
 
 </h1>
+
+<div className="mt-8 text-lg leading-9 text-slate-600"> 
+  <img className="mx-auto" src={AILINKPhoto} alt="AI Link Building" />
+</div>
 
 <p className="mt-8 text-xl leading-9 text-slate-600">
 

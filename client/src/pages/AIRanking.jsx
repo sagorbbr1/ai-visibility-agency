@@ -15,7 +15,7 @@ import {
 
 import Container from "../components/ui/Container";
 import Button from "../components/ui/Button";
-
+import AIRankingImg from "../assets/images/airanking.png";
 const faqs = [
   {
     question: "What is AI Ranking?",
@@ -111,6 +111,10 @@ AI Answers,
 Not Just Google
 
 </h1>
+
+<div className="mt-8 text-lg leading-9 text-slate-600">
+  <img className="mx-auto" src={AIRankingImg} alt="AI Ranking" />
+</div>
 
 <p className="mt-8 text-xl leading-9 text-slate-600">
 

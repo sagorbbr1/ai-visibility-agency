@@ -14,7 +14,7 @@ import {
 
 import Container from "../components/ui/Container";
 import Button from "../components/ui/Button";
-
+import GeoAuditImg from "../assets/images/geoaudit.png";
 const faqs = [
   {
     question: "What is a GEO Audit?",
@@ -69,6 +69,10 @@ AI Search & LLM Visibility
 </span>
 
 </h1>
+
+<div className="mt-8 text-lg leading-9 text-slate-600">
+  <img className="mx-auto" src={GeoAuditImg} alt="GEO Audit" />
+</div>
 
 <p className="mt-8 text-xl leading-9 text-slate-600">
 
